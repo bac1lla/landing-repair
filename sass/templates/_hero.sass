@@ -1,0 +1,108 @@
+.hero
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	background: url(../img/hero-bg.jpg) no-repeat $dark center / cover
+	height: 100vh
+	color: $light
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0	
+		width: 100%
+		height: 100%
+		background-color: rgba($dark, 0.7)
+	&::after
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100% 
+		height: 3rem
+		background: $dark
+	&__content
+		position: relative
+		max-width: 47.857rem
+		margin-left: 4.28rem
+	&__text
+		line-height: 138%
+		font-size: 1.571rem
+		max-width: 35.714rem
+		margin-top: 1rem
+		margin-bottom: 3rem
+	&__button	
+		margin-right: 20px
+		&--primary
+			padding: 20px 28px
+			background-color: $accent
+			color: $light
+			box-shadow: 0px 5px 15px rgba($accent, 0.2)
+			transition: box-shadow 0.2s
+		&--outline
+			padding: 17px 45px
+			border: 1px solid $light
+			background-color: transparent
+			color: $light
+	&__instagram
+		position: absolute
+		top: 0
+		left: 0
+		max-width: 87px
+		height: 100%
+		font-size: 1rem
+	&__scroll-down
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		left: 0
+		bottom: 0
+		min-width: 17.64rem
+		min-height: 6.92rem
+		background-color: $dark
+		font-size: 0.857rem
+		font-family: $ff-main
+		text-transform: uppercase
+		text-decoration: none
+		color: $light
+		z-index: 12
+		&::after
+			content: ''
+			background: url('../img/svg/arrow-down.svg') no-repeat center
+			width: 30px
+			height: 30px
+			border: 2px solid $accent
+			border-radius: 50%
+			margin-left: 18px
+.instagram
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $dark
+	&__link
+		display: flex
+		align-items: center
+		text-transform: uppercase
+		text-decoration: none
+		font-family: $ff-second
+		color: $accent
+		transform: rotate(90deg)
+		&::after
+			content: ''
+			width: 50px
+			height: 1px
+			background-color: $accent
+			margin-left: 10px
+.title
+	margin: 0
+	font-family: $ff-main
+	text-transform: uppercase
+	font-size: 2.857rem
+	font-weight: 400
+	line-height: 132.8%
+	&--accent
+		color: $accent

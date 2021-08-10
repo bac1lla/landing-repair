@@ -1,0 +1,73 @@
+.team
+	margin-top: -32rem
+	padding-bottom: 13px
+	&__row
+		display: flex
+		justify-content: space-between
+		max-width: 1028px
+		padding-top: 6.07rem
+		margin: 0 auto
+		margin-bottom: 4rem
+	&__card
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		font-family: $ff-main
+		&-title
+			margin: 0
+			color: lighten($dark, 2%)
+			font-size: 1.285rem
+			line-height: 1.785rem
+		&-text
+			margin: 0
+			padding-bottom: 1.714rem
+			font-family: $ff-book
+			font-size: 1.285rem
+			line-height: 1.857rem
+			color: #959595
+		&-accent
+			margin: 0
+			padding: 1rem 1.642rem
+			background-color: $accent
+			color: $light
+			text-transform: uppercase
+			font-size: 0.928rem
+			line-height: 1.428rem
+		&-icon
+			position: absolute
+			top: -30px
+			left: -30px
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: $accent
+			width: 70px
+			height: 70px
+			box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
+		&__image
+			width: 100%
+	&__description
+		padding-top: 1.571rem
+		width: 16.642rem
+		margin-top: -7rem
+		background-color: $light
+	&__text
+		max-width: 40.785rem
+		margin: auto
+		margin-bottom: 4.6rem
+		text-align: center
+		font-size: 1.428rem
+		line-height: 2.4rem
+		color: #363636
+		&::before
+			content: ''
+			display: block
+			margin: auto
+			width: 55px
+			height: 2px
+			background-color: $accent
+			border-radius: 30px
+

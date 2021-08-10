@@ -1,0 +1,60 @@
+.clients
+	padding-bottom: 27.185rem
+	&__row
+		margin-top: 3.2rem
+	&__card
+		position: relative    
+		padding: 1.71rem 2.29rem 4rem 1.5rem    
+		max-width: 27rem
+		background: #FFFFFF
+		box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04)
+		flex-basis: 30%
+		&:nth-child(even)
+			margin: 0 10px 
+		&-heading
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&-title
+			line-height: 1.786rem
+			color: #181818
+			margin-top: 0.9rem
+			margin-left: 23px
+.card
+	&__avatar
+		min-width: 5.42rem
+		height: 5.42rem
+		border-radius: 50%
+		overflow: hidden
+		img
+			width: 100%  
+	&__feedback
+		color: #959595
+		font-size: 15px
+		line-height: 180%
+		font-family: $ff-book
+	&__labels
+		box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5)
+		position: absolute
+		bottom: 0.5rem
+		transform: translateY(50%)
+		margin-left: -1.5rem
+		display: flex
+		// flex-wrap: wrap
+	&__label
+		display: flex
+		align-items: center
+		max-width: 147px
+		height: 3.857rem
+		padding-right: 1.214rem
+		padding-left: 1.214rem
+		background-color: $accent
+		box-shadow: 5px 5px 20px rgba(227,184,115,.3)
+		color: $light
+		font-family: 'Yeseva One', cursive
+		font-size: 1.21rem
+		line-height: 1.71rem
+		img
+			margin-right: 1.07rem
+		&-area
+			border-right: 1px solid $light	

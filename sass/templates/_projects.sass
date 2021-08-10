@@ -1,0 +1,63 @@
+.projects
+	padding-top: 5rem
+	padding-bottom: 29rem
+	&__row
+		margin-top: 7rem
+.swiper
+	&-slide
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 6rem
+		overflow: hidden
+		&__image
+			margin-left: 10px
+			max-width: 750px
+			max-height: 500px
+		img
+			width: 100%
+		&__heading
+			margin-bottom: 0.4rem
+			color: $accent
+			font-size: 1.285rem
+			line-height: 1.785rem
+			text-transform: uppercase
+			font-weight: normal
+			font-family: $ff-main
+		&__value
+			color: $light
+			font-size: 1.071rem
+			line-height: 1.428rem
+		&__text
+			flex-basis: 35%
+			padding-bottom: 1.3rem
+	&-pagination
+		&-bullet
+			background: rgba($light, 0.3)
+			width: 0.7rem
+			height: 0.7rem
+			margin: 0 9px !important
+			&-active
+				background: $light
+	&-button
+		&-prev, &-next
+			bottom: 0
+			top: auto
+			background-size: 42px
+			width: 42px
+			height: 14px
+			&::after
+				display: none
+		&-prev
+			background: url('../img/svg/arrow-prev.svg') no-repeat center
+			left: 0
+		&-next
+			background: url('../img/svg/arrow-next.svg') no-repeat center
+
+.swiper-container-horizontal>.swiper-pagination-bullets
+	width: auto
+	bottom: -2px
+
+.col-55
+	margin-bottom: -15rem
+
+	

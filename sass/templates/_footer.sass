@@ -1,0 +1,97 @@
+.footer
+	position: relative
+	padding-top: 3rem
+	background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0	
+		width: 100%
+		height: 100%
+		background-color: rgba($dark, 0.6)
+	&__wrap
+		position: relative
+		background: #181818 url(../img/bg-lines.svg) no-repeat center / cover
+		max-width: 63.07rem
+		margin: auto
+		margin-top: -19rem
+		margin-bottom: 3.714rem
+		padding: 2.5rem
+	&__title
+		margin-bottom: 3.214rem
+		margin-top: 0
+		text-transform: uppercase
+		font-family: $ff-main
+		font-size: 1.428rem
+		line-height: 2rem
+		font-weight: normal
+		text-align: center
+	&__form
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		max-width: 37.142rem
+		margin: auto
+	&__input
+		padding-top: 0.3rem
+		&-group
+			display: flex
+			flex-direction: column
+			flex-basis: 45%
+			margin-bottom: 3.2rem
+			&--full-width
+				flex-basis: 100%
+				margin-bottom: 2rem
+	&__policy
+		flex-basis: 100%
+		margin-bottom: 3.6rem
+		&-label
+			justify-content: center		
+	&__button
+		margin: auto
+		padding: 1.285rem 4.785rem
+	&__menu
+		position: relative
+		background-color: $dark
+		padding: 4.285rem 0
+	&__place
+		position: relative
+		display: flex
+		flex-direction: column
+		text-align: center
+	&__contact
+		margin: 0 auto
+		margin-bottom: 26px
+		max-width: 540px
+		color: $accent
+		font-family: $ff-main
+		font-size: 1.428rem
+		line-height: 2rem
+		text-transform: uppercase	
+	&__links
+		display: flex
+		justify-content: center
+		margin-bottom: 3.09rem
+	&__link
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 28px
+		height: 28px
+		margin: 0 8px
+		padding: 7px
+		background: $accent
+		border-radius: 50%
+	&__map
+		margin: 0 auto
+		margin-bottom: 4rem
+		max-width: 925px
+		min-height: 465px
+		// -webkit-filter: grayscale(100%)	
+		// filter: grayscale(100%)
+
+// Делаем карту ЧБ
+.ymaps-2-1-76-ground-pane
+	-webkit-filter: grayscale(100%)	
+	filter: grayscale(100%)		

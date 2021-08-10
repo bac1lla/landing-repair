@@ -1,0 +1,105 @@
+.steps
+	padding-bottom: 31rem
+	&__heading
+		font-size: 1.929rem
+	&__word
+		&::after
+			margin-left: 6.4rem
+		&-text
+			margin-top: 0.9rem
+	&-list
+		position: relative //вытаскиваем табы "наверх"
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		max-width: 100%
+		margin-left: 40%
+		margin-top: -1.2rem
+		padding: 0
+		z-index: 50
+		&__item
+			width: 33%
+			opacity: 0.3
+			font-size: 1.07rem
+			margin-bottom: 1.4rem
+			cursor: pointer
+			// margin-right: 11rem
+			&:nth-child(3n)
+				margin-right: 0
+				width: 7.14rem
+			&--active
+				opacity: 1
+		&__number
+			font-family: $ff-main
+			text-transform: uppercase
+			border-bottom: 1px solid $accent
+		&__text
+			font-size: 1.07rem
+			line-height: 1.785rem
+			margin-top: 0.7rem
+	&__pagination
+		margin-top: 0rem
+	&__swiper
+		&-container
+			margin-top: -11.9rem
+		&-slide
+			display: flex
+			justify-content: space-between
+			flex-wrap: nowrap
+			&-value
+				position: relative
+				max-width: 337px
+				margin-top: 3rem
+				margin-right: 10rem
+			&-numberOf
+				font-size: 1.286rem
+				line-height: 1.785rem
+				text-transform: uppercase
+				font-family: $ff-main
+			&-heading
+				max-width: 14rem
+				font-weight: normal
+				font-size: 1.07rem
+				margin-top: 1.5rem
+			&-text
+				font-size: 1.07rem
+				line-height: 1.785rem
+				margin-top: 1.285rem
+		&-pagination
+			width: auto !important
+			bottom: 13rem !important
+			& .swiper-pagination-bullet
+				background: rgba($light, 0.3)
+				width: 0.7rem
+				height: 0.7rem
+				margin: 0 9px !important
+				&-active
+					background: $light
+		&-button
+			&-prev, &-next
+				bottom: 13rem
+				top: auto
+				background-size: 42px
+				width: 42px
+				height: 14px
+				&::after
+					display: none
+			&-prev
+				background: url('../img/svg/arrow-prev.svg') no-repeat center
+				left: 0
+			&-next
+				background: url('../img/svg/arrow-next.svg') no-repeat center
+	&__image
+		max-width: 760px
+		max-height: 372px
+		margin-top: 13rem
+.swiper
+	&-slide
+		&__image
+			overflow: hidden
+			& img
+				width: 100%
+.section-title__word--mr
+	&::after
+		margin-left: 7rem
